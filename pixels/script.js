@@ -125,7 +125,7 @@ clearButton.addEventListener('click', function () {
 })
 
 window.onload = function () {
-  createPixelBoard(5, 5);
+  createPixelBoard(8,8);
   botA.className = "color selected"
   var corAtual = botA;
   var pixel = document.getElementsByClassName("pixel");
