@@ -123,6 +123,7 @@ const esvaziar = () => {
   total = 0;
   totalDiv.innerText = `${total}`;
   console.log('esvaziou o carrinho'); 
+  localStorage.clear();
 };
 
 button.addEventListener('click', () => {
