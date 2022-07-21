@@ -18,7 +18,7 @@ const NoLoading = () => { loadingClass.innerText = ''; };
 
 const input = document.querySelector('.input');
 const button = document.querySelector('.button');
-let search ;
+let search = '';
 
 function zeroResults() {
   sec.innerText = ' sem resultados';
@@ -102,7 +102,7 @@ const startProducts = async (busca) => {
   const produtos = await fetchProducts(busca);
   NoLoading();
   const produtosResults = produtos.results;
-  if (produtosResults.length === 0) { zeroResults(); }
+  if (produtosResults.length === 0) { zeroResults(); } else { sec.innerHTML = '' }
   console.log(`encontrou ${produtosResults.length} resultados`);
   produtosResults.forEach(({ id, title, thumbnail }) => {
     para = { sku: id, name: title, image: thumbnail };
