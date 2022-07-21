@@ -18,7 +18,7 @@ const NoLoading = () => { loadingClass.innerText = ''; };
 
 const input = document.querySelector('.input');
 const button = document.querySelector('.button');
-let search = '';
+let search ;
 
 function zeroResults() {
   sec.innerText = ' sem resultados';
